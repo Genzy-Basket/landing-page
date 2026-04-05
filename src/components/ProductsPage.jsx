@@ -6,6 +6,12 @@ import GooglePlayIcon from "./GooglePlayIcon";
 
 const API_URL = `${import.meta.env.VITE_API_URL || "https://api1.genzybasket.com/api"}/product`;
 
+// Optimize Cloudinary images — resize + auto format + auto quality
+function optimizeImage(url, width = 400) {
+  if (!url || !url.includes("cloudinary.com")) return url;
+  return url.replace("/upload/", `/upload/w_${width},f_auto,q_auto/`);
+}
+
 const categoryMeta = {
   vegetables: {
     emoji: "🥬",
@@ -78,7 +84,7 @@ function ProductCard({ product }) {
       <div className="relative aspect-square bg-gray-50 overflow-hidden">
         {product.images?.[0] ? (
           <img
-            src={product.images[0]}
+            src={optimizeImage(product.images[0])}
             alt={product.name}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             loading="lazy"
