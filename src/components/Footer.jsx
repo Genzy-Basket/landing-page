@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { ArrowUp } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import logoWhite from '../assets/images/logo_wordmark_tagline_white.png';
 
 const quickLinks = [
@@ -8,6 +9,14 @@ const quickLinks = [
   { label: 'Categories', href: '#categories' },
   { label: 'How It Works', href: '#how-it-works' },
   { label: 'Download', href: '#download' },
+];
+
+const legalLinks = [
+  { label: 'Terms & Conditions', to: '/terms' },
+  { label: 'Privacy Policy', to: '/privacy' },
+  { label: 'Refunds & Cancellations', to: '/refunds' },
+  { label: 'Contact Us', to: '/contact' },
+  { label: 'Delete Account', to: '/delete-account' },
 ];
 
 const copyrightText = '\u00A9 2026 Genzy Basket. All rights reserved.';
@@ -75,7 +84,7 @@ export default function Footer() {
       `}</style>
 
       <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-12">
           {/* Column 1: Logo & description */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -127,7 +136,37 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 3: Contact */}
+          {/* Column 3: Legal */}
+          <div>
+            <motion.h3
+              className="text-white text-lg font-semibold mb-4"
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+              transition={{ duration: 0.5, delay: 0.3 }}
+            >
+              Legal
+            </motion.h3>
+            <ul className="space-y-3">
+              {legalLinks.map((link, i) => (
+                <motion.li
+                  key={link.label}
+                  custom={i}
+                  initial="hidden"
+                  animate={isInView ? 'visible' : 'hidden'}
+                  variants={linkVariants}
+                >
+                  <Link
+                    to={link.to}
+                    className="link-underline text-gray-400 hover:text-white transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </motion.li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 4: Contact */}
           <div>
             <motion.h3
               className="text-white text-lg font-semibold mb-4"
