@@ -30,6 +30,7 @@ jobs:
       - name: Build
         env:
           VITE_API_URL: ${{ vars.VITE_API_URL }}
+          VITE_BASE_URL: ${{ vars.VITE_BASE_URL || '/' }}
         run: npm run build
 
       - name: Copy index.html as 404.html for SPA routing
