@@ -2,17 +2,99 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/logo_icon_green.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Genzy Basket — Fresh Groceries Subscribed & Delivered Daily</title>
-    <meta name="description" content="Subscribe for daily fresh vegetables, fruits, dairy & more delivered before 8 AM. Zero delivery charges. Serving RR Nagar, Bengaluru." />
+    <meta name="description" content="Subscribe for daily fresh vegetables, fruits, dairy & more delivered before 8 AM. Zero delivery charges on subscriptions. Serving RR Nagar, Bengaluru." />
+    <meta name="keywords" content="grocery delivery, fresh vegetables, fruits, dairy, subscription, daily delivery, Bengaluru, RR Nagar, Pattanagere, free delivery, online grocery, Genzy Basket" />
+    <meta name="author" content="Genzy Basket" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://genzybasket.com/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo_icon_green.png" />
+    <link rel="apple-touch-icon" href="/logo_icon_green.png" />
+    <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#099E0E" />
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Genzy Basket — Fresh Groceries Delivered Daily" />
-    <meta property="og:description" content="Subscribe for daily fresh groceries delivered before 8 AM with zero delivery charges." />
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://genzybasket.com" />
+    <meta property="og:url" content="https://genzybasket.com/" />
+    <meta property="og:title" content="Genzy Basket — Fresh Groceries Delivered Daily Before 8 AM" />
+    <meta property="og:description" content="Subscribe for daily fresh groceries with zero delivery charges. Farm-fresh vegetables, fruits, dairy & more. Serving RR Nagar, Bengaluru." />
+    <meta property="og:image" content="https://genzybasket.com/og-image.png" />
+    <meta property="og:site_name" content="Genzy Basket" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Genzy Basket — Fresh Groceries Delivered Daily" />
+    <meta name="twitter:description" content="Subscribe for daily fresh groceries delivered before 8 AM. Zero delivery charges. Serving Bengaluru." />
+    <meta name="twitter:image" content="https://genzybasket.com/og-image.png" />
+
+    <!-- Geo targeting -->
+    <meta name="geo.region" content="IN-KA" />
+    <meta name="geo.placename" content="Bengaluru" />
+
+    <!-- Structured Data: Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Genzy Basket",
+      "description": "Fresh grocery subscription service delivering daily before 8 AM with zero delivery charges in RR Nagar, Bengaluru.",
+      "url": "https://genzybasket.com",
+      "telephone": "+916363784290",
+      "email": "genzybasket@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Pattanagere Main Road, RR Nagar",
+        "addressLocality": "Bengaluru",
+        "addressRegion": "Karnataka",
+        "postalCode": "560098",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 12.921955628882763,
+        "longitude": 77.50713202870494
+      },
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 12.921955628882763,
+          "longitude": 77.50713202870494
+        },
+        "geoRadius": "5000"
+      },
+      "priceRange": "₹",
+      "image": "https://genzybasket.com/logo_icon_green.png",
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.genzybasket.app",
+        "https://www.instagram.com/genzybasket/"
+      ]
+    }
+    </script>
+
+    <!-- Structured Data: Software Application -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Genzy Basket",
+      "operatingSystem": "Android",
+      "applicationCategory": "LifestyleApplication",
+      "description": "Fresh grocery subscription app — daily delivery before 8 AM with zero delivery charges.",
+      "url": "https://play.google.com/store/apps/details?id=com.genzybasket.app",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.genzybasket.app",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+      }
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
