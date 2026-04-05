@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import GooglePlayIcon from "./GooglePlayIcon";
 
-const API_URL = `${import.meta.env.VITE_API_URL}/product`;
+const API_URL = `${import.meta.env.VITE_API_URL || "https://api1.genzybasket.com/api"}/product`;
 
 const categoryMeta = {
   vegetables: {
