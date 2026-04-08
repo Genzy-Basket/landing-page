@@ -13,6 +13,7 @@ import PrivacyPage from './components/PrivacyPage'
 import RefundsPage from './components/RefundsPage'
 import ContactPage from './components/ContactPage'
 import DeleteAccountPage from './components/DeleteAccountPage'
+import CanonicalTag from './components/CanonicalTag'
 
 function LandingPage() {
   return (
@@ -32,6 +33,7 @@ function LandingPage() {
 function App() {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
+      <CanonicalTag />
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/products" element={<ProductsPage />} />

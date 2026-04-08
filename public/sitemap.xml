@@ -6,32 +6,32 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://genzybasket.com/products</loc>
+    <loc>https://genzybasket.com/products/</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://genzybasket.com/terms</loc>
+    <loc>https://genzybasket.com/terms/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://genzybasket.com/privacy</loc>
+    <loc>https://genzybasket.com/privacy/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://genzybasket.com/refunds</loc>
+    <loc>https://genzybasket.com/refunds/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://genzybasket.com/contact</loc>
+    <loc>https://genzybasket.com/contact/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://genzybasket.com/delete-account</loc>
+    <loc>https://genzybasket.com/delete-account/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>
