@@ -1,19 +1,20 @@
-import { Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Features from './components/Features'
-import Categories from './components/Categories'
-import HowItWorks from './components/HowItWorks'
-import ServiceArea from './components/ServiceArea'
-import Download from './components/Download'
-import Footer from './components/Footer'
-import ProductsPage from './components/ProductsPage'
-import TermsPage from './components/TermsPage'
-import PrivacyPage from './components/PrivacyPage'
-import RefundsPage from './components/RefundsPage'
-import ContactPage from './components/ContactPage'
-import DeleteAccountPage from './components/DeleteAccountPage'
-import CanonicalTag from './components/CanonicalTag'
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Features from "./components/Features";
+import Categories from "./components/Categories";
+import HowItWorks from "./components/HowItWorks";
+import ServiceArea from "./components/ServiceArea";
+import Download from "./components/Download";
+import Footer from "./components/Footer";
+import ProductsPage from "./components/ProductsPage";
+import TermsPage from "./components/TermsPage";
+import PrivacyPage from "./components/PrivacyPage";
+import RefundsPage from "./components/RefundsPage";
+import ContactPage from "./components/ContactPage";
+import DeleteAccountPage from "./components/DeleteAccountPage";
+import SharePage from "./components/SharePage";
+import CanonicalTag from "./components/CanonicalTag";
 
 function LandingPage() {
   return (
@@ -27,7 +28,7 @@ function LandingPage() {
       <Download />
       <Footer />
     </>
-  )
+  );
 }
 
 function App() {
@@ -42,9 +43,11 @@ function App() {
         <Route path="/refunds" element={<RefundsPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/delete-account" element={<DeleteAccountPage />} />
+        <Route path="/r/:id" element={<SharePage kind="reel" />} />
+        <Route path="/d/:id" element={<SharePage kind="dish" />} />
       </Routes>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
