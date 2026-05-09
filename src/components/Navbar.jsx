@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-import logo from '../assets/images/logo_wordmark.png';
+import logo from '../assets/images/logo_wordmark.webp';
 
 const navLinks = [
   { label: 'Features', href: '#features' },
@@ -84,7 +84,15 @@ export default function Navbar() {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
           >
-            <img src={logo} alt="Genzy Basket" className="h-8" />
+            <img
+              src={logo}
+              alt="Genzy Basket"
+              width="198"
+              height="32"
+              fetchpriority="high"
+              decoding="async"
+              className="h-8 w-auto"
+            />
           </motion.a>
 
           {/* Desktop links — stagger in from right */}

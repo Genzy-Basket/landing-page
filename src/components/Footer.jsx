@@ -2,7 +2,7 @@ import { useRef, useState, useEffect } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { ArrowUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import logoWhite from '../assets/images/logo_wordmark_tagline_white.png';
+import logoWhite from '../assets/images/logo_wordmark_tagline_white.webp';
 
 const quickLinks = [
   { label: 'Features', href: '#features' },
@@ -95,7 +95,11 @@ export default function Footer() {
             <img
               src={logoWhite}
               alt="Genzy Basket"
-              className="h-14 mb-4"
+              width="186"
+              height="56"
+              loading="lazy"
+              decoding="async"
+              className="h-14 mb-4 w-auto"
               style={
                 isInView
                   ? { animation: 'logoGlow 3s ease-in-out infinite' }
