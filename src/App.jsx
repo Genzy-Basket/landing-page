@@ -5,6 +5,7 @@ import Features from "./components/Features";
 import Categories from "./components/Categories";
 import HowItWorks from "./components/HowItWorks";
 import ServiceArea from "./components/ServiceArea";
+import FAQ from "./components/FAQ";
 import Download from "./components/Download";
 import Footer from "./components/Footer";
 import ProductsPage from "./components/ProductsPage";
@@ -25,6 +26,7 @@ function LandingPage() {
       <Categories />
       <HowItWorks />
       <ServiceArea />
+      <FAQ />
       <Download />
       <Footer />
     </>
